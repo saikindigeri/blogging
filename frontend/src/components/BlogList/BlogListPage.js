@@ -21,7 +21,7 @@ const BlogListPage = () => {
 
   const fetchBlogs = async () => {
     try {
-      const response = await fetch('https://blog-backend-1-wkh7.onrender.com/posts', {
+      const response = await fetch('https://blogging-2-68v0.onrender.com/posts', {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`,
         },
@@ -61,7 +61,7 @@ const BlogListPage = () => {
 
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`https://blog-backend-1-wkh7.onrender.com/posts/${id}`, {
+      const response = await fetch(`https://blogging-2-68v0.onrender.com/posts/${id}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`,

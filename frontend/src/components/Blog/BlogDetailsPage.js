@@ -19,7 +19,7 @@ function BlogDetailPage() {
 
   const fetchBlog = async () => {
     try {
-      const response = await fetch(`https://blog-backend-1-wkh7.onrender.com/posts/${id}`);
+      const response = await fetch(`https://blogging-2-68v0.onrender.com/posts/${id}`);
       if (!response.ok) throw new Error('Error fetching blog');
       const data = await response.json();
       setBlog(data);
@@ -30,7 +30,7 @@ function BlogDetailPage() {
 
   const fetchComments = async () => {
     try {
-      const response = await fetch(`https://blog-backend-1-wkh7.onrender.com/posts/${id}/comments`);
+      const response = await fetch(`https://blogging-2-68v0.onrender.com/posts/${id}/comments`);
       if (!response.ok) throw new Error('Error fetching comments');
       const data = await response.json();
       setComments(data);
@@ -41,7 +41,7 @@ function BlogDetailPage() {
 
   const handleAddComment = async () => {
     try {
-      const response = await fetch(`https://blog-backend-1-wkh7.onrender.com/posts/${id}/comments`, {
+      const response = await fetch(`https://blogging-2-68v0.onrender.com/posts/${id}/comments`, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`,
@@ -65,7 +65,7 @@ function BlogDetailPage() {
 
   if (error) return <p>{error}</p>;
 
-  if (!blog) return <p>Loading...</p>;
+  if (!blog) return <div className='loading-section'><p>Loading...</p></div>
 console.log(comments)
 
  const timeAgo = (dateString) => {
@@ -117,7 +117,10 @@ console.log(comments)
                 </div>
               ))
             ) : (
-              <p>No comments yet.</p>
+              <div> <p className='no-comments'>No comments yet.</p>
+
+              </div> 
+            
             )}
           </div>
 

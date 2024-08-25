@@ -14,7 +14,7 @@ const RegisterPage = () => {
     e.preventDefault();
     setError('');
     try {
-      await axios.post('https://blog-backend-1-wkh7.onrender.com/api/register', { username, email, password });
+      await axios.post('https://blogging-2-68v0.onrender.com/api/register', { username, email, password });
       navigate('/login');
     } catch (error) {
       setError('Error registering. Please try again.');

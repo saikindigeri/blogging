@@ -23,7 +23,7 @@ const CreateBlogPage = () => {
 
     try {
       const token = localStorage.getItem('token'); 
-      const response = await fetch('https://blog-backend-1-wkh7.onrender.com/posts', {
+      const response = await fetch('https://blogging-2-68v0.onrender.com/posts', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

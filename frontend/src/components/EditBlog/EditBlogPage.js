@@ -18,7 +18,7 @@ const EditBlogPage = () => {
 
   const fetchBlog = async () => {
     try {
-      const response = await fetch(`https://blog-backend-1-wkh7.onrender.com/posts/${id}`, {
+      const response = await fetch(`https://blogging-2-68v0.onrender.com/posts/${id}`, {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`,
         },
@@ -47,7 +47,7 @@ const EditBlogPage = () => {
     }
 
     try {
-      const response = await fetch(`https://blog-backend-1-wkh7.onrender.com/posts/${id}`, {
+      const response = await fetch(`https://blogging-2-68v0.onrender.com/posts/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

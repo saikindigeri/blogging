@@ -18,7 +18,7 @@ const LoginPage = () => {
     e.preventDefault();
     setError('');
     try {
-      const response = await axios.post('https://blog-backend-1-wkh7.onrender.com/api/login', { email, password });
+      const response = await axios.post('https://blogging-2-68v0.onrender.com/api/login', { email, password });
       localStorage.setItem('token', response.data.token);
       navigate('/');
     } catch (error) {
