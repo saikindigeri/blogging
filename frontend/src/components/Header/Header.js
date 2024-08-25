@@ -16,7 +16,7 @@ const navigate=useNavigate()
       <div className="containerr">
 
         
-       <Link className='logo' href="/"> <h1 >MyBlog</h1></Link>
+       <Link className='logo' href="/"> <h1 >ZuAI</h1></Link>
         <nav>
           <ul className="nav-list">
             <li><Link to="/" className="nav-link">Home</Link></li>
