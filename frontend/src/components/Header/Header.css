@@ -3,7 +3,7 @@
 
 
 .header {
-  background: #ae0ddb;
+  background: #000000;
   color: #fff;
   padding: 15px 0; 
   width: 100%;
@@ -54,8 +54,8 @@ nav {
   text-decoration: none;
   color: #fff;
   font-size: 1.2rem; 
-  font-weight: 600; 
-  font-family: Arial, Helvetica, sans-serif;
+
+
   position: relative; 
   transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   padding: 10px 15px; 
