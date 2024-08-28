@@ -102,7 +102,7 @@ console.log(comments)
       <p>{blog.content}</p>
 
       <button onClick={handleShowComments}>
-        {showComments ? 'Hide Comments' : `View Comments (${comments.length})`}
+        {showComments ? 'Hide Comments' : `View Comments ${comments.length}`}
       </button>
 
       {showComments && (

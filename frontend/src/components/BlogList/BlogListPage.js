@@ -82,7 +82,7 @@ const BlogListPage = () => {
     <div className="page-container">
       <Header />
       <div className="blog-lists-page">
-        <h1 className="title">Blog List</h1>
+        
         {error && <p className="error">{error}</p>}
         <div className="search-container">
           <input
@@ -93,8 +93,11 @@ const BlogListPage = () => {
             className="search-input"
           />
         </div>
+     
         {filteredBlogs.length > 0 ? (
+          
           <ul className="blog-list">
+               <h1 className="title">Blog List</h1>
             {filteredBlogs.map((blog) => (
               <li key={blog.id} className="blog-item">
                 <h2 className="blog-title">{blog.title}</h2>
