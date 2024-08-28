@@ -6,9 +6,8 @@
    width: 100vw;
 height: fit-content;
    display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+
+
 }
 
 
@@ -39,12 +38,12 @@ height: fit-content;
 
 .search-container {
     margin: 1rem 0;
-    text-align: center;
+    
   }
   
   .search-input {
-    width: 100%;
-    max-width: 400px;
+   
+   
     padding: 0.75rem;
     border-radius: 8px;
     border: 1px solid #ddd;

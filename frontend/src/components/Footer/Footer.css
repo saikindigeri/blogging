@@ -1,6 +1,6 @@
 
 .footer {
-    background: #990ed9;
+    background: #000000;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -34,7 +34,7 @@
   }
   
   .social-link:hover {
-    color: #050504;
+    color: #ffff15;
   }
   
   .social-link:active {
